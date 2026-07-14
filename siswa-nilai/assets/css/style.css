@@ -1,0 +1,190 @@
+:root {
+    --brand-1: #0d6efd;
+    --brand-2: #0dcaf0;
+    --bg-soft: #f4f7fb;
+    --text-muted-soft: #75839c;
+}
+
+body {
+    background-color: var(--bg-soft);
+    font-family: "Segoe UI", Roboto, Arial, sans-serif;
+}
+
+/* ===== Navbar ===== */
+.navbar-brand-custom {
+    background: linear-gradient(135deg, var(--brand-1), var(--brand-2));
+}
+
+.navbar-brand-custom .navbar-brand {
+    font-weight: 700;
+    letter-spacing: .3px;
+}
+
+.navbar-brand-custom .nav-link {
+    color: rgba(255, 255, 255, .9) !important;
+    font-weight: 500;
+    padding: .5rem 1rem !important;
+    border-radius: .5rem;
+    transition: background-color .15s ease, color .15s ease;
+    display: flex;
+    align-items: center;
+    gap: .4rem;
+}
+
+.navbar-brand-custom .nav-link:hover {
+    background-color: rgba(255, 255, 255, .15);
+    color: #fff !important;
+}
+
+.navbar-brand-custom .nav-link.active {
+    background-color: rgba(255, 255, 255, .25);
+    color: #fff !important;
+}
+
+/* ===== Page heading ===== */
+.page-heading {
+    font-weight: 700;
+    color: #1c2a3a;
+}
+
+.page-subtitle {
+    color: var(--text-muted-soft);
+}
+
+/* ===== Cards ===== */
+.card {
+    border: none;
+    border-radius: 1rem;
+}
+
+.shadow-soft {
+    box-shadow: 0 .5rem 1.5rem rgba(13, 60, 110, .08);
+}
+
+/* Stat cards on dashboard */
+.stat-card {
+    border-radius: 1rem;
+    overflow: hidden;
+    color: #fff;
+    position: relative;
+}
+
+.stat-card .stat-icon {
+    width: 54px;
+    height: 54px;
+    border-radius: .9rem;
+    background: rgba(255, 255, 255, .2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+
+.stat-card .stat-value {
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1.1;
+}
+
+.stat-card .stat-label {
+    font-size: .85rem;
+    opacity: .92;
+}
+
+.stat-card.bg-grad-1 { background: linear-gradient(135deg, #0d6efd, #0dcaf0); }
+.stat-card.bg-grad-2 { background: linear-gradient(135deg, #6f42c1, #d63384); }
+.stat-card.bg-grad-3 { background: linear-gradient(135deg, #198754, #20c997); }
+
+/* ===== Table ===== */
+.card-table thead th {
+    background-color: #eaf3ff;
+    color: #2b3e57;
+    font-weight: 600;
+    font-size: .85rem;
+    text-transform: uppercase;
+    letter-spacing: .03em;
+    border-bottom: none;
+}
+
+.card-table tbody tr:hover {
+    background-color: #f5f9ff;
+}
+
+.badge-nilai-baik { background-color: #198754; }
+.badge-nilai-cukup { background-color: #fd7e14; }
+.badge-nilai-kurang { background-color: #dc3545; }
+
+.empty-state {
+    padding: 3rem 1rem;
+    color: var(--text-muted-soft);
+}
+
+.empty-state i {
+    font-size: 3rem;
+    color: #d3dceb;
+}
+
+/* ===== Form ===== */
+.form-label {
+    font-weight: 600;
+    color: #2b3e57;
+    font-size: .9rem;
+}
+
+.card-header-grad {
+    background: linear-gradient(135deg, var(--brand-1), var(--brand-2));
+    color: #fff;
+    border-radius: 1rem 1rem 0 0 !important;
+}
+
+.btn-brand {
+    background: linear-gradient(135deg, var(--brand-1), var(--brand-2));
+    border: none;
+    color: #fff;
+}
+
+.btn-brand:hover {
+    opacity: .92;
+    color: #fff;
+}
+
+/* ===== Footer ===== */
+.footer-custom {
+    color: var(--text-muted-soft);
+    font-size: .85rem;
+}
+
+/* ===== List group (panel di dashboard) ===== */
+.list-group-item-action {
+    border-left: none;
+    border-right: none;
+    color: inherit;
+    transition: background-color .15s ease;
+}
+
+.list-group-item-action:hover {
+    background-color: #f5f9ff;
+}
+
+.list-group-item-action:first-child {
+    border-top: none;
+}
+
+.list-group-item-action:last-child {
+    border-bottom: none;
+}
+
+/* ===== Avatar bulat inisial nama siswa ===== */
+.avatar-circle {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--brand-1), var(--brand-2));
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: .95rem;
+    flex-shrink: 0;
+}

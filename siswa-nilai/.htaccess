@@ -1,0 +1,9 @@
+RewriteEngine On
+RewriteBase /siswa-nilai/
+
+# Jangan rewrite jika file atau folder benar-benar ada
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Arahkan semua request ke index.php
+RewriteRule ^(.*)$ index.php/$1 [L]
